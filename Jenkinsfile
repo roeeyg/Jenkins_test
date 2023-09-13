@@ -2,13 +2,6 @@ pipeline {
     agent any  // run on any available agent
 
     stages {
-        stage('Checkout') {
-            steps {
-                // Get the code from the version control system.
-                checkout scm
-            }
-        }
-
         stage('Setup Python') {
             steps {
                 // Install Python and pip (assuming a Debian-based image)

@@ -19,7 +19,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 // Run the tests
-                sh 'python -m pytest'
+                sh 'pytest'
             }
         }
     }

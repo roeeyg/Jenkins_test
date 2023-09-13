@@ -26,7 +26,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 // Run the tests
-                sh 'pytest test_my_module.py'
+                sh 'pytest add_func_test.py'
             }
         }
     }

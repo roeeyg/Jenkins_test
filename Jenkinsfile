@@ -12,14 +12,14 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 // Install pytest using pip
-                sh 'pip install pytest'
+                sh 'pip3 install pytest'
             }
         }
 
         stage('Run Tests') {
             steps {
                 // Run the tests
-                sh 'pytest add_func_test.py'
+                sh 'python -m pytest'
             }
         }
     }

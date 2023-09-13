@@ -5,6 +5,6 @@ import add_func
 
 def test_add():
     assert add_func.add(1, 2) == 3
-    assert add_func.add(2, 2) == 4
+    assert add_func.add(2, 3) == 5
     assert add_func.add(-1, 1) == 0
     assert add_func.add(2.5, 3.5) == 6.0
